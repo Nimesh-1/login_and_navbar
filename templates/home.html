@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+   
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <a href="#">
+          MY NOTEBOOK
+        </a>
+      </div>
+
+      <ul class="navbar_menu">
+        <li class="nav-link">
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class="fas fa-list-ul"></i>
+            <span>My List</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </a>
+        </li>
+      </ul>
+
+      <label for="toggle" class="hamburger">
+        <i class="fas fa-bars"></i>
+        <span class="toggle-text">
+          More
+        </span>
+      </label>
+      <input type="checkbox" name="toggle" id="toggle" />
+
+      <ul class="navbar_sub-menu">
+        <li class="nav-link">
+          <a href="#">
+            <i class="fas fa-user-alt"></i>
+            <span>Account</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span>Setting</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script
+    src="https://kit.fontawesome.com/a09c0a675d.js"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
